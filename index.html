@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Todo list</h1>
+        <form name="reminders">
+            <input type="text"  placeholder="What do you want us to remind you?"
+            name="task" class="task">
+            <button class="add">Add</button>
+        </form>
+    </header>
+    <br>
+    <hr>
+    
+    <div class="container">
+
+    </div>
+
+    <div class="modal-bg"></div>
+    <div class="modal">
+        <h2>Change task</h2>
+        <input type="text">
+        <div class="modal-btns">
+            <button>save</button>
+            <button class="close">close</button>
+        </div>
+    </div>
+    
+    <div class="modal_del">
+        <h4>Are you absolutely sure? <img style="cursor: pointer;" src="./del.svg"></h4>
+        <hr>
+        <p>Please type <span id="red">some task</span> to confirm.</p>
+        <input type="text">
+        <button class="close_bg"><span>I understand the consequences, delete this remind.</span></button>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
